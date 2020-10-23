@@ -1,0 +1,101 @@
+.promo {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 170px;
+  margin-left: 5.7%;
+  margin-right: 1%;
+}
+
+.promo__content {
+  margin-right: 71px;
+}
+
+.promo__title {
+  margin-bottom: 30px;
+
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $font-color;
+}
+
+.promo__text {
+  position: relative;
+
+  margin-left: 95px;
+  padding-bottom: 26px;
+
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: $font-color;
+}
+
+.promo__text::before {
+  position: absolute;
+  content: "";
+
+  height: 2px;
+  width: 66px;
+
+  background-color: #ffffff;
+  left: -90px;
+  top: 18px;
+}
+
+.promo__button {
+  margin-left: 95px;
+  padding: 17px 45px;
+
+  background-color: $color;
+  border-radius: 5px;
+
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $font-color;
+  outline: none;
+}
+
+.promo__button:hover {
+  opacity: 0.9;
+}
+
+.promo__button:active {
+  opacity: 0.8;
+}
+
+.promo__img {
+  background-image: url("../img/Mask-Group.png");
+}
+
+.promo__scrolling {
+  position: absolute;
+  bottom: 24px;
+  left: -35px;
+
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-color;
+  text-decoration: none;
+
+  opacity: 0.5;
+  transform: rotate(-90deg);
+}

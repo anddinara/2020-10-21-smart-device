@@ -2,14 +2,14 @@
   min-height: 878px;
 
   background-color: #1B2D37;
-  background-image: url('../img/desktop-promo.png');
+  background-image: url("../img/desktop-promo.png");
   background-repeat: no-repeat;
   background-position: 50% 0%;
 }
 
 .page-header__wrapper {
   margin: 0 auto;
-  max-width: 1620px;
+  max-width: 1600px;
 
   display: flex;
   flex-direction: column;
@@ -18,4 +18,9 @@
 .page-header__nav {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 32px;
+  margin-right: 6%;
+  margin-left: 6%;
 }

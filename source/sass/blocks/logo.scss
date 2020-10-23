@@ -6,9 +6,25 @@
 .logo__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  margin-left: 16px;
 }
 
 .logo__title {
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: bold;
+  color: $font-color;
+  font-size: 25px;
+  line-height: 29px;
+}
 
-
+.logo__subtitle {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 500;
+  color: #788891;
+  font-size: 12px;
+  line-height: 14px;
 }
