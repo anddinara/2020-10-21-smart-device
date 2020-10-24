@@ -8,6 +8,7 @@
 .info-company__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -36,7 +37,7 @@
 }
 
 .info-company__button {
-  height: 45px;
+  min-height: 45px;
   padding: 14px 26px;
   margin-left: 50px;
 
@@ -63,4 +64,31 @@
 
 .info-company__button:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .info-company__item {
+    padding: 0;
+    margin-left: 35px;
+  }
+
+  .info-company__icon {
+    position: relative;
+    left: 0;
+
+    width: 23px;
+    height: 23px;
+  }
+
+  .info-company__icon--mail {
+    width: 25px;
+  }
+
+  .info-company__text {
+    display: none;
+  }
+
+  .info-company__button {
+    display: none;
+  }
 }

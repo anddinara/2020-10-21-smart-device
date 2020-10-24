@@ -24,3 +24,12 @@
   margin-right: 6%;
   margin-left: 6%;
 }
+
+@media (max-width: 1024px) {
+  .page-header__nav {
+    margin-top: 20px;
+    margin-right: 4%;
+    margin-left: 3%;
+  }
+}
+

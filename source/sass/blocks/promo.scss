@@ -79,10 +79,6 @@
   opacity: 0.8;
 }
 
-.promo__img {
-  background-image: url("../img/Mask-Group.png");
-}
-
 .promo__scrolling {
   position: absolute;
   bottom: 24px;
@@ -98,4 +94,61 @@
 
   opacity: 0.5;
   transform: rotate(-90deg);
+}
+
+@media (max-width: 1024px) {
+  .promo {
+    margin-top: 38px;
+  }
+
+  .promo__content {
+    margin-right: 0px;
+  }
+
+  .promo__title {
+    margin-left: 44px;
+    margin-top: 75px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo__text {
+    margin-bottom: 25px;
+
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  .promo__text::before {
+    top: 14px;
+    left: -48px;
+
+    width: 33px;
+  }
+
+  .promo__img {
+    margin-right: -8px;
+    width: 260px;
+    height: 340px;
+  }
+
+  .promo__button {
+    padding: 17px 27px;
+  }
+
+  .promo__scrolling {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__word {
+    display: none;
+  }
+
+  .promo__button::before {
+    position: relative;
+    content: "Бесплатная консультация";
+  }
 }
