@@ -33,3 +33,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .page-header {
+    min-height: 500px;
+  }
+
+  .page-header__nav {
+    margin-top: 17px;
+    margin-right: 5%;
+    margin-left: 6%;
+  }
+}
+

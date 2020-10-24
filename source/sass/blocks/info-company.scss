@@ -92,3 +92,14 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .info-company {
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+
+  .info-company__item {
+    margin-left: 25px;
+  }
+}

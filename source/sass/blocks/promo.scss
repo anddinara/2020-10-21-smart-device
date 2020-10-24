@@ -143,8 +143,53 @@
 }
 
 @media (max-width: 768px) {
+  .promo {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+
+  .promo__content {
+    order: 1;
+  }
+
+  .promo__title {
+    margin-top: -10%;
+    margin-left: 16px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__text {
+    margin-left: 67px;
+    margin-right: 1%;
+    margin-bottom: 40px;
+    padding-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 156.8%;
+  }
+
   .promo__word {
     display: none;
+  }
+
+  .promo__img {
+    order: -1;
+    margin-right: 0px;
+
+    width: 294px;
+    height: 220px;
+  }
+
+  .promo__button {
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-bottom: 68px;
   }
 
   .promo__button::before {
