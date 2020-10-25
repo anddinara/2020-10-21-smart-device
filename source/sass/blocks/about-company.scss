@@ -1,0 +1,46 @@
+.about-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-company__img {
+  margin-left: -30px;
+}
+
+.about-company__title {
+  padding: 0;
+  margin: 0;
+
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.about-company__content {
+  align-items: flex-start;
+}
+
+.about-company__link {
+  display: inline-block;
+
+  padding: 14px 50px;
+
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00B2FF;
+  text-decoration: none;
+
+  border: 1px solid #00B2FF;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
