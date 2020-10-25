@@ -19,3 +19,9 @@
   color: #1B2D37;
   list-style: none;
 }
+
+@media (max-width: 1024px) {
+  .copyright {
+    display: none;
+  }
+}

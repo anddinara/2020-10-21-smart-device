@@ -38,3 +38,19 @@
 
   opacity: 0.5;
 }
+
+@media (max-width: 1024px) {
+  .main-nav {
+    margin-left: 3%;
+    margin-right: 0px;
+    width: 243px;
+  }
+
+  .main-nav__list {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+
+    min-height: 175px;
+
+  }
+}
