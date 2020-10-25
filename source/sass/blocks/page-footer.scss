@@ -1,0 +1,31 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+  margin-top: 65px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-footer__media {
+  margin-left: 6%;
+  margin-right: 9%;
+}
+
+.page-footer__webside {
+  border-top: 1px solid #626962;
+  opacity: 0.2;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: row;
+  margin: 14px auto;
+  max-width: 1600px;
+}

@@ -3,6 +3,10 @@
   flex-direction: row;
 }
 
+.logo--footer {
+  margin-bottom: 50px;
+}
+
 .logo__wrapper {
   display: flex;
   flex-direction: column;
@@ -28,6 +32,10 @@
   color: #788891;
   font-size: 12px;
   line-height: 14px;
+}
+
+.logo__title--footer {
+  color: #203C42;
 }
 
 @media (max-width: 768px) {

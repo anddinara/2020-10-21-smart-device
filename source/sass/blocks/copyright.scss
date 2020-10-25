@@ -1,0 +1,21 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 460px;
+
+  padding: 0px;
+  margin: 0px;
+  margin-right: 142px;
+  margin-left: 6%;
+
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  list-style: none;
+}

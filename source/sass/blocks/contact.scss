@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title {
+  margin-top: 0px;
+
+  font-family: $font-roboto-cond;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+}
+
+.contact__list {
+  padding: 0px;
+  margin: 0px;
+
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+  list-style: none;
+}
