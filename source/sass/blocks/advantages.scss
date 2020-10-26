@@ -15,6 +15,7 @@
 
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
+  background-color: #FFFFFF;
 }
 
 .advantages__wrapper {
@@ -62,4 +63,33 @@
   line-height: 22px;
 
   color: #666666;
+}
+
+@media(max-width: 1024px) {
+  .advantages {
+    margin-top: 55px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+  }
+
+  .advantages__info {
+    min-height: 232px;
+  }
+
+  .advantages__wrapper  {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .advantages__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .advantages__text {
+    margin-right: 30px;
+  }
 }

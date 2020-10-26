@@ -1,7 +1,26 @@
+.container {
+  background-image: url("../img/polygon-1.png"),
+                    url("../img/polygon-2.png"),
+                    url("../img/polygon-3.png"),
+                    url("../img/polygon-4.png");
+  background-position: 12% 5%, 54% 42%, -18% 125%, 98% 45%;
+  background-repeat: no-repeat;
+}
+
 .page-main__wrapper {
   display: flex;
   flex-direction: column;
 
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media(max-width: 1024px) {
+  .container {
+    background-image: none;
+
+    background-image: url("../img/polygon-2.png");
+    background-position: 54% 42%;
+    background-repeat: no-repeat;
+  }
 }
