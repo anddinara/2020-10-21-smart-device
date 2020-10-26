@@ -13,7 +13,7 @@
   min-height: 299px;
   margin-bottom: 30px;
 
-  border: 1px solid #EBEBEB;;
+  border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
 }
 
@@ -24,15 +24,16 @@
   margin-left: 44px;
 }
 
-.advantages__icon path {
+.advantages__icon {
   fill: #00B2FF;
 }
 
 .advantages__info:hover {
   background-color: #00B2FF;
+  border: 1px solid #00B2FF;
 }
 
-.advantages__info:hover .advantages__icon path {
+.advantages__info:hover .advantages__icon {
   fill: #FFFFFF;
 }
 
