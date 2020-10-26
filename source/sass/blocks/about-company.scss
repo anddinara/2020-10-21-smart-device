@@ -91,3 +91,34 @@
     display: inline-block;
   }
 }
+
+@media(max-width: 768px) {
+  .about-company {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .about-company__content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .about-company__title {
+    font-size: 28px;
+    line-height: 140.62%;
+
+    margin-bottom: 20px;
+  }
+
+  .about-company__img {
+    display: none;
+  }
+
+  .about-company__text {
+    margin-bottom: 40px;
+  }
+
+  .about-company__link {
+    margin-top: -20px;
+  }
+}

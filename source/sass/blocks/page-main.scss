@@ -20,7 +20,15 @@
     background-image: none;
 
     background-image: url("../img/polygon-2.png");
-    background-position: 54% 42%;
+    background-position: 300px 100px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    background-image: url("../img/polygon-2.png");
+    background-position: -50px 700px;
     background-repeat: no-repeat;
   }
 }
