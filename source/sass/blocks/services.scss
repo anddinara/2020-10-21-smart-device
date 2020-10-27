@@ -141,3 +141,42 @@
     margin-bottom: 30px;
   }
 }
+
+@media(max-width: 768px) {
+  .services__title {
+    width: 90%;
+    margin-right: 2%;
+    margin-bottom: 42px;
+    margin-left: 7%;
+
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .services__list {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .services__link {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .services__link--production {
+    background-image: url("../img/mobile-service-1.png");
+  }
+
+  .services__link--installation {
+    background-image: url("../img/mobile-service-2.png");
+  }
+
+  .services__link--accessories {
+    background-image: url("../img/mobile-service-3.png");
+  }
+
+  .services__subtitle {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
