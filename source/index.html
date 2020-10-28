@@ -11,6 +11,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__nav">
+        <h1 class="visually-hidden">Smart Device</h1>
         <div class="logo">
           <a class="logo__link" href="#">
             <picture>
@@ -24,6 +25,7 @@
           </div>
         </div>
         <section class="info-company">
+          <h2 class="visually-hidden">Контактные данные компании</h2>
           <ul class="info-company__list">
             <li class="info-company__item">
               <a class="info-company__link" href="#">
@@ -63,7 +65,7 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="container">
+    <div class="page-main__container">
       <div class="page-main__wrapper">
         <section class="advantages">
           <div class="advantages__info">
@@ -148,9 +150,30 @@
         </div>
       </div>
     </section>
+    <section class="feedback">
+      <div class="feedback__container">
+        <div class="feedback__wrapper">
+          <img class="feedback__img" src="img/paper-airplane.png" width="511" height="288" alt="Обратная связь">
+          <div class="feedback__content">
+            <h3 class="feedback__title">Остались вопросы? Задайте их нам!</h3>
+            <p class="feedback__subtitle">Мы проконсультируем Вас бесплатно</p>
+            <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
+              <div class="feedback__pesonal">
+                <input class="feedback__input feedback__input--text" type="text" name="name" placeholder="Имя" required>
+                <input class="feedback__input feedback__input--tel" type="tel" name="tel" placeholder="Телефон" required>
+              </div>
+              <textarea class="feedback__textarea" rows="6" placeholder="Ваш вопрос" name="letter"></textarea>
+              <div class="feedback__nav">
+                <button class="feedback__button" type="submit">Задать вопрос</button>
+                <input class="visually-hidden feedback__input feedback__input--checkbox" type="checkbox" name="personal-data" id="personal-data" checked>
+                <label class="feedback__description feedback__description--checkbox" for="personal-data">Я согласен на обработку  персональных данных</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
-
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__media">
