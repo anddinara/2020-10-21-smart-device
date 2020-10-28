@@ -200,3 +200,72 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
+
+@media (max-width: 1024px) {
+  .feedback__container {
+    background-image: none;
+  }
+
+  .feedback__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .feedback__img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback__wrapper  {
+    padding-top: 0px;
+  }
+
+  .feedback__content {
+    margin-right: 0px;
+  }
+
+  .feedback__title {
+    font-family: $font-roboto-cond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+    color: #FFFFFF;
+  }
+
+  .feedback__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .feedback__pesonal {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 0px;
+  }
+
+  .feedback__input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .feedback__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feedback__description {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
