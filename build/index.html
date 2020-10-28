@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script async="" src="js/main.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -51,21 +52,21 @@
         <div class="promo__content">
           <h2 class="promo__title">Печатные платы</h2>
           <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <button class="promo__button" type="button">
+          <a class="promo__button" href="#feedback">
             <span class="promo__word">Получить бесплатную консультацию</span>
-          </button>
+          </a>
         </div>
         <picture>
               <source media="(max-width: 768px)" srcset="img/mobile-promo-img.png">
               <source media="(max-width: 1024px)" srcset="img/table-promo-img.png">
               <img class="promo__img" src="img/desktop-promo-img.png" height="515" width="705" alt="Печатные платы">
         </picture>
-        <a class="promo__scrolling" href="#">Скролл вниз</a>
+        <a class="promo__scrolling" href="#advantages">Скролл вниз</a>
       </section>
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__container">
+    <div class="page-main__container" id="advantages">
       <div class="page-main__wrapper">
         <section class="advantages">
           <div class="advantages__info">
@@ -150,7 +151,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__container">
         <div class="feedback__wrapper">
           <img class="feedback__img" src="img/paper-airplane.png" width="511" height="288" alt="Обратная связь">

@@ -52,6 +52,12 @@
   top: 18px;
 }
 
+.promo__img {
+  background-image: url("../img/polygon-feedback-1.png");
+  background-position: 0 -140px;
+  background-repeat: no-repeat;
+}
+
 .promo__button {
   margin-left: 95px;
   padding: 17px 45px;
@@ -69,6 +75,7 @@
   text-transform: uppercase;
   color: $font-color;
   outline: none;
+  text-decoration: none;
 }
 
 .promo__button:hover {
