@@ -1,10 +1,13 @@
 .contact {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 20px;
 }
 
 .contact__title {
   margin-top: 0px;
+  margin-bottom: 28px;
 
   font-family: $font-roboto-cond;
   font-style: normal;
@@ -17,6 +20,9 @@
 }
 
 .contact__list {
+  display: flex;
+  flex-direction: column;
+
   padding: 0px;
   margin: 0px;
 
@@ -30,9 +36,90 @@
   list-style: none;
 }
 
-@media (max-width: 1024px) {
-  .contact {
-    margin-right: 3%;
-  }
+.contact__button {
+  display: none;
 }
 
+@media (max-width: $mobile) {
+  .contact {
+    position: relative;
+    margin-bottom: 0px;
+  }
+
+  .contact__title {
+    margin: 30px 15px 25px 15px;
+  }
+
+  .contact__list {
+    margin: 5px 15px 30px 15px;
+  }
+
+  .contact__button {
+    position: absolute;
+    right: 17px;
+    top: 29px;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .nav--opened ~ .contact__button::before {
+    content: "";
+    right: 0px;
+    top: 8px;
+
+    position: absolute;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: #C4C4C4;
+  }
+
+  .nav--closed ~ .contact__button {
+    &::before,
+    &::after {
+      content: "";
+      right: 0px;
+      top: 8px;
+
+      position: absolute;
+
+      width: 16px;
+      height: 1px;
+
+      background-color: #C4C4C4;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  .contact__list.nav--closed {
+    display: none;
+  }
+
+  .contact__list.nav--opened {
+    display: flex;
+  }
+
+  .contact__list.nav--nojs {
+    display: flex;
+  }
+
+  .nav--nojs ~ .contact__button {
+    display: none;
+  }
+}

@@ -1,21 +1,29 @@
 .website-about {
   display: none;
+
+  font-family: $font-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  opacity: 0.5;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $table) {
   .website-about {
+    position: relative;
+
     display: flex;
 
-    font-family: $font-mono;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #1B2D37;
-
-    opacity: 0.5;
+    text-align: center;
   }
 }
 
+@media (max-width: $mobile) {
+  .website-about {
+    margin-bottom: 32px;
+  }
+}

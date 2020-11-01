@@ -56,17 +56,17 @@
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
-.info-company__button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.info-company__button:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (max-width: 1024px) {
+@media (max-width: $table) {
   .info-company__item {
     padding: 0;
     margin-left: 35px;
@@ -93,7 +93,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
   .info-company {
     align-items: flex-start;
     margin-top: 5px;

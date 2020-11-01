@@ -1,10 +1,10 @@
 .main-nav {
-  width: 570px;
-  margin-right: 12%;
+  margin-bottom: 20px;
 }
 
 .main-nav__title {
   margin-top: 0px;
+  margin-bottom: 28px;
 
   font-family: $font-roboto-cond;
   font-style: normal;
@@ -16,41 +16,139 @@
   text-transform: uppercase;
 }
 
+.main-nav__button {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   height: 100px;
-
-  padding: 0px;
-  margin: 0px;
-
-  list-style: none;
+  width: 516px;
+  padding: 0;
+  margin: 0;
 
   font-family: $font-mono;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-
   color: #1B2D37;
 
+  list-style: none;
+}
+
+.main-nav__item {
+  margin-right: 70px;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #1B2D37;
   opacity: 0.5;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $table) {
   .main-nav {
-    margin-left: 3%;
-    margin-right: 0px;
-    width: 243px;
+    margin-bottom: 0px;
   }
 
   .main-nav__list {
-    flex-wrap: nowrap;
-    margin-right: 0px;
-
+    width: 243px;
     min-height: 175px;
+    flex-wrap: nowrap;
+  }
 
+  .main-nav__item {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .main-nav {
+    position: relative;
+    margin: 0;
+
+    border-bottom: 1px solid rgba(98, 105, 98, 0.2);
+  }
+
+  .main-nav__title {
+    margin: 30px 15px 25px 15px;
+  }
+
+  .main-nav__button {
+    position: absolute;
+    right: 17px;
+    top: 29px;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .nav--opened ~ .main-nav__button::before {
+    content: "";
+    right: 0px;
+    top: 8px;
+
+    position: absolute;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: #C4C4C4;
+  }
+
+  .nav--closed ~ .main-nav__button {
+    &::before,
+    &::after {
+      content: "";
+      right: 0px;
+      top: 8px;
+
+      position: absolute;
+
+      width: 16px;
+      height: 1px;
+
+      background-color: #C4C4C4;
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+
+    &::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  .main-nav__list {
+    width: auto;
+    margin: 0px 15px 30px 15px;
+  }
+
+  .main-nav__list.nav--closed {
+    display: none;
+  }
+
+  .main-nav__list.nav--opened {
+    display: flex;
+  }
+
+  .main-nav__list.nav--nojs {
+    display: flex;
+  }
+
+  .nav--nojs ~ .main-nav__button {
+    display: none;
   }
 }

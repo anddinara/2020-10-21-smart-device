@@ -38,20 +38,35 @@
   color: #203C42;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $table) {
   .logo--footer {
-    margin-left: 3%;
     margin-bottom: 0px;
+    width: 230px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
+  .logo--footer {
+    width: 216px;
+
+    margin-bottom: 22px;
+  }
+
   .logo__image {
     width: 38px;
     height: 38px;
   }
 
+  .logo__image--footer {
+    width: 52px;
+    height: 52px;
+  }
+
   .logo__wrapper {
     display: none;
+  }
+
+  .logo__wrapper--footer {
+    display: flex;
   }
 }
