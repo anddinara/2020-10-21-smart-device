@@ -1,5 +1,14 @@
  'use strict';
 
+var input = document.querySelector('.feedback__input--tel');
+
+input.addEventListener('focus', function () {
+  if (input.value.length === 0) {
+    input.value = '+7(';
+  }
+
+});
+
 // const anchors = document.querySelectorAll('a[href*="#"]');
 
 // for (let anchor of anchors) {
