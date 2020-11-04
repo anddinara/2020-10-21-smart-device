@@ -1,34 +1,25 @@
 .page-main__container {
-  background-image: url("../img/polygon-1.png"),
-                    url("../img/polygon-2.png"),
-                    url("../img/polygon-3.png"),
-                    url("../img/polygon-4.png");
-  background-position: 12% 5%, 54% 42%, -18% 125%, 98% 45%;
+  background-image: url("../img/page-main_desktop.png");
   background-repeat: no-repeat;
+  background-position: 50% 35%;
 }
 
 .page-main__wrapper {
   display: flex;
   flex-direction: column;
 
-  max-width: 1170px;
+  max-width: $container;
   margin: 0 auto;
 }
 
-@media(max-width: 1024px) {
-  .container {
-    background-image: none;
-
-    background-image: url("../img/polygon-2.png");
-    background-position: 300px 100px;
-    background-repeat: no-repeat;
+@media(max-width: $table) {
+  .page-main__container {
+    background-position: 30% 40%;
   }
 }
 
-@media(max-width: 768px) {
-  .container {
-    background-image: url("../img/polygon-2.png");
-    background-position: -50px 700px;
-    background-repeat: no-repeat;
+@media(max-width: $mobile) {
+  .page-main__container {
+    background-position: 42.5% 106%;
   }
 }

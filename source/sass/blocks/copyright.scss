@@ -30,7 +30,7 @@
   text-decoration: none;
 }
 
-.сopyright__item--right {
+.copyright__item--reserved {
   flex-grow: 0.25;
   justify-content: flex-start;
 }
@@ -58,7 +58,7 @@
     margin-left: 3%;
   }
 
-  .сopyright__item--right,
+  .сopyright__item--reserved,
   .copyright__item--years {
     display: none;
   }

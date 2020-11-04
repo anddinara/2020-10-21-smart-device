@@ -17,7 +17,7 @@
           <a class="logo__link" href="#">
             <picture>
               <source media="(max-width: 768px)" srcset="img/mobile-logo.svg">
-              <img class="logo__image" src="img/desktop-logo.svg" width="52" height="52" alt="Smart Device">
+              <img class="logo__image" src="img/desktop-logo.svg" width="52" height="52" alt=" Логотип Smart Device">
             </picture>
           </a>
           <div class="logo__wrapper">
@@ -80,7 +80,7 @@
           </div>
           <div class="advantages__info">
             <div class="advantages__wrapper">
-              <svg class="advantages__icon" width="35" height="35">
+              <svg class="advantages__icon advantages__icon--people" width="35" height="35">
                 <use xlink:href="img/sprite.svg#icon-people"></use>
               </svg>
               <h3 class="advantages__title">Крупные поставщики</h3>
@@ -89,7 +89,7 @@
           </div>
           <div class="advantages__info">
             <div class="advantages__wrapper">
-              <svg class="advantages__icon" width="36" height="31">
+              <svg class="advantages__icon advantages__icon--cont" width="36" height="31">
                 <use xlink:href="img/sprite.svg#icon-conf"></use>
               </svg>
               <h3 class="advantages__title">Полная конфиденциальность</h3>
@@ -98,7 +98,7 @@
           </div>
           <div class="advantages__info">
             <div class="advantages__wrapper">
-              <svg class="advantages__icon" width="35" height="35">
+              <svg class="advantages__icon advantages__icon--cost" width="35" height="35">
                 <use xlink:href="img/sprite.svg#icon-cost"></use>
               </svg>
               <h3 class="advantages__title">Персонализация стоимости</h3>
@@ -108,8 +108,11 @@
         </section>
         <section class="about-company">
           <picture>
-            <source media="(max-width: 1024px)" srcset="img/table-about-company.png">
-            <img class="about-company__img" src="img/desktop-about-company.png" width="220" height="317" alt="2005">
+            <source type="image/webp" media="(max-width: 1024px)" srcset="img/about-company_table@1x.webp 1x, img/about-company_table@1x.webp 2x">
+            <source type="image/webp" srcset="img/about-company_desktop@1x.webp 1x, img/about-company_desktop@2x.webp 2x">
+
+            <source media="(max-width: 1024px)" srcset="img/about-company_table@1x.png 1x, img/about-company_table@2x.png 2x">
+            <img class="about-company__img" src="img/about-company_desktop@1x.png" srcset="img/about-company_desktop@2x.png 2x" width="210" height="317" alt="2005 год">
           </picture>
           <div class="about-company__content">
             <h3 class="about-company__title">О компании</h3>
@@ -182,7 +185,7 @@
           <div class="page-footer__media">
             <div class="logo logo--footer">
               <a class="logo__link" href="#">
-                <img class="logo__image logo__image--footer" src="img/desktop-logo.svg" width="52" height="52" alt="Smart Device">
+                <img class="logo__image logo__image--footer" src="img/desktop-logo.svg" width="52" height="52" alt="Логотип Smart Device">
               </a>
               <div class="logo__wrapper logo__wrapper--footer">
                 <span class="logo__title logo__title--footer">Service Device</span>
@@ -220,7 +223,7 @@
           <div class="page-footer__nav">
             <nav class="main-nav">
               <h4 class="main-nav__title">Разделы сайта</h4>
-              <ul class="main-nav__list nav--closed nav--nojs">
+              <ul class="main-nav__list closed nojs">
                 <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">Продукты</a></li>
                 <li class="main-nav__item"><a class="main-nav__link" href="#">Производтсво печатных плат</a></li>
@@ -233,7 +236,7 @@
             </nav>
             <section class="contact">
               <h4 class="contact__title">Наш офис</h4>
-              <ul class="contact__list nav--closed nav--nojs">
+              <ul class="contact__list closed nojs">
                 <li class="contact__item"><a class="contact__link">г. Мытищи, Олимпийский проспект, д.10</a></li>
                 <li class="contact__item"><a class="contact__link">+7 (495) 589-40-50</a></li>
                 <li class="contact__item"><a class="contact__link">+7 (925) 003-87-67</a></li>
@@ -248,7 +251,7 @@
     <div class="page-footer__webside">
       <div class="page-footer__container container">
         <ul class="copyright">
-          <li class="copyright__item сopyright__item--right">
+          <li class="copyright__item copyright__item--reserved">
             <a class="copyright__link" href="#">Все права защищены</a>
           </li>
           <li class="copyright__item copyright__item--years">
@@ -283,8 +286,6 @@
     </div>
   </section>
 
-
-
   <script>
     var navMain = document.querySelector('.main-nav__list');
     var navToggle = document.querySelector('.main-nav__button');
@@ -292,29 +293,48 @@
     var contactList = document.querySelector('.contact__list');
     var contactToggle = document.querySelector('.contact__button');
 
-    navMain.classList.remove('nav--nojs');
+    navMain.classList.remove('nojs');
 
     navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('nav--closed')) {
-          navMain.classList.remove('nav--closed');
-          navMain.classList.add('nav--opened');
+      if (navMain.classList.contains('closed')) {
+          navMain.classList.remove('closed');
+          navMain.classList.add('opened');
       } else {
-          navMain.classList.add('nav--closed');
-          navMain.classList.remove('nav--opened');
+          navMain.classList.add('closed');
+          navMain.classList.remove('opened');
       }
     });
 
-    contactList.classList.remove('nav--nojs');
+    contactList.classList.remove('nojs');
 
     contactToggle.addEventListener('click', function() {
-      if (contactList.classList.contains('nav--closed')) {
-          contactList.classList.remove('nav--closed');
-          contactList.classList.add('nav--opened');
+      if (contactList.classList.contains('closed')) {
+          contactList.classList.remove('closed');
+          contactList.classList.add('opened');
       } else {
-          contactList.classList.add('nav--closed');
-          contactList.classList.remove('nav--opened');
+          contactList.classList.add('closed');
+          contactList.classList.remove('opened');
       }
     });
+
+
+    var modalButton = document.querySelector('.info-company__button');
+    var modal = document.querySelector('.modal');
+
+    modalButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.add('modal__show');
+    });
+
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (modal.classList.contains("modal__show")) {
+            modal.classList.remove("modal__show");
+        }
+      }
+    });
+
   </script>
 </body>
 </html>

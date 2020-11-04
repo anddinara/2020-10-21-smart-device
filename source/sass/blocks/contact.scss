@@ -70,7 +70,7 @@
     background-color: rgba(255, 255, 255, 0);
   }
 
-  .nav--opened ~ .contact__button::before {
+  .opened ~ .contact__button::before {
     content: "";
     right: 0px;
     top: 8px;
@@ -83,7 +83,7 @@
     background-color: #C4C4C4;
   }
 
-  .nav--closed ~ .contact__button {
+  .closed ~ .contact__button {
     &::before,
     &::after {
       content: "";
@@ -107,19 +107,19 @@
     }
   }
 
-  .contact__list.nav--closed {
+  .contact__list.closed {
     display: none;
   }
 
-  .contact__list.nav--opened {
+  .contact__list.opened {
     display: flex;
   }
 
-  .contact__list.nav--nojs {
+  .contact__list.nojs {
     display: flex;
   }
 
-  .nav--nojs ~ .contact__button {
+  .nojs ~ .contact__button {
     display: none;
   }
 }

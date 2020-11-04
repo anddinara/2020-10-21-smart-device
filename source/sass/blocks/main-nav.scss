@@ -94,7 +94,7 @@
     background-color: rgba(255, 255, 255, 0);
   }
 
-  .nav--opened ~ .main-nav__button::before {
+  .opened ~ .main-nav__button::before {
     content: "";
     right: 0px;
     top: 8px;
@@ -107,7 +107,7 @@
     background-color: #C4C4C4;
   }
 
-  .nav--closed ~ .main-nav__button {
+  .closed ~ .main-nav__button {
     &::before,
     &::after {
       content: "";
@@ -136,19 +136,19 @@
     margin: 0px 15px 30px 15px;
   }
 
-  .main-nav__list.nav--closed {
+  .main-nav__list.closed {
     display: none;
   }
 
-  .main-nav__list.nav--opened {
+  .main-nav__list.opened {
     display: flex;
   }
 
-  .main-nav__list.nav--nojs {
+  .main-nav__list.nojs {
     display: flex;
   }
 
-  .nav--nojs ~ .main-nav__button {
+  .nojs ~ .main-nav__button {
     display: none;
   }
 }

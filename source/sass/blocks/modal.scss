@@ -2,6 +2,10 @@
   display: none;
 }
 
+.modal__show {
+  display: block;
+}
+
 .modal::before {
   content: "";
   position: fixed;
@@ -18,7 +22,7 @@
 
 .modal__wrapper {
   position: fixed;
-  top: 136px;
+  top: 5%;
   right: calc(50% - 245px);
   z-index: 100;
 
@@ -28,7 +32,7 @@
   background-color: #00B2FF;
 
   box-sizing: border-box;
-  width: 490px;
+  max-width: 490px;
   padding-left: 39px;
   padding-right: 39px;
 }
@@ -198,4 +202,15 @@
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+}
+
+@media(max-width: $mobile) {
+  .modal__wrapper {
+    top: 0px;
+    right: calc(50% - 160px);
+
+    width: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
