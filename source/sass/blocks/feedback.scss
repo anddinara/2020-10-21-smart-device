@@ -14,7 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
 
-  max-width: 1200px;
+  max-width: $container;
   margin: 0 auto;
   padding-top: 55px;
   padding-bottom: 112px;
@@ -22,6 +22,7 @@
 
 .feedback__img {
   padding-top: 105px;
+  margin-left: -9px;
 }
 
 .feedback__content {
@@ -29,7 +30,7 @@
   flex-direction: column;
 
   width: 570px;
-  margin-right: 20px;
+  margin-right: 14px;
 }
 
 .feedback__title {
@@ -212,8 +213,34 @@
     align-items: center;
     justify-content: center;
 
-    margin-right: 10px;
-    margin-left: 10px;
+    padding-top: 48px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .feedback__content {
+    width: 591px;
+    margin-right: 0px;
+    margin-bottom: 103px;
+  }
+
+  .feedback__title {
+    margin-bottom: 17px;
+
+    font-family: $font-roboto-cond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .feedback__subtitle {
+    margin-bottom: 55px;
+  }
+
+  .feedback__textarea {
+    margin-bottom: 43px;
   }
 
   .feedback__img {
@@ -227,10 +254,14 @@
   }
 
   .feedback__content {
-    margin-right: 0px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 42px;
   }
 
   .feedback__title {
+    margin-bottom: 16px;
+
     font-family: $font-roboto-cond;
     font-style: normal;
     font-weight: normal;
@@ -240,7 +271,7 @@
   }
 
   .feedback__subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 
   .feedback__pesonal {
@@ -251,6 +282,7 @@
   }
 
   .feedback__input {
+    padding: 12px 18px 18px 18px;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -260,8 +292,14 @@
     flex-direction: column;
   }
 
+  .feedback__textarea {
+    height: 104px;
+    margin-bottom: 28px;
+  }
+
   .feedback__button {
     width: 100%;
+    margin-bottom: 20px;
     box-sizing: border-box;
   }
 

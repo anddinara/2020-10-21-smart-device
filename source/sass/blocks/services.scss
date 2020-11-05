@@ -7,14 +7,14 @@
   flex-direction: column;
   align-items: flex-start;
 
-  max-width: 1200px;
+  max-width: $container;
   margin: 0 auto;
 }
 
 .services__title {
-  margin-top: 90px;
-  margin-bottom: 50px;
-  margin-left: 20px;
+  margin-top: 88px;
+  margin-bottom: 52px;
+  margin-left: 15px;
 
   font-family: $font-roboto-cond;
   font-style: normal;
@@ -30,9 +30,9 @@
   justify-content: flex-start;
 
   width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 127px;
   box-sizing: border-box;
 }
 
@@ -41,8 +41,6 @@
 
   display: flex;
 
-  width: 370px;
-  height: 620px;
   margin-right: 30px;
 
   text-decoration: none;
@@ -51,22 +49,17 @@
   background-size: cover;
 }
 
-.services__link--production {
-  background-image: url("../img/desktop-service-1.png");
-}
-
-.services__link--installation {
-  background-image: url("../img/desktop-service-2.png");
-}
-
-.services__link--accessories {
-  background-image: url("../img/desktop-service-3.png");
+.services__img {
+  display: flex;
+  width: 100%;
 }
 
 .services__subtitle {
+  position: absolute;
+  top: 23px;
+  left: 44px;
+
   width: 170px;
-  margin-top: 50px;
-  margin-left: 43px;
 
   font-family: $font-roboto-cond;
   font-style: normal;
@@ -89,12 +82,21 @@
   height: 63px;
 
   background-color: #00B2FF;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
-@media(max-width: 1024px) {
+@media(max-width: $table) {
   .services__title {
     margin-top: 50px;
     margin-right: 130px;
+    margin-left: 25px;
 
     font-size: 32px;
     line-height: 140.62%;
@@ -105,45 +107,37 @@
     flex-direction: column;
 
     width: 95%;
+    margin-right: 3.1%;
+    margin-bottom: 34px;
+    margin-left: 3.1%;
   }
 
   .services__link {
     display: flex;
 
-    width: 100%;
+    width: 715px;
     height: 256px;
     margin-right: 0px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
-  .services__link--production {
-    background-image: url("../img/table-service-1.png");
-  }
-
-  .services__link--installation {
-    background-image: url("../img/table-service-2.png");
-  }
-
-  .services__link--accessories {
-    background-image: url("../img/table-service-3.png");
+  .services__img {
+    width: 100%;
+    height: 256px;
   }
 
   .services__subtitle {
-    margin-top: 40px;
-    margin-left: 45px;
+    margin-top: 15px;
+    margin-left: 2px;
   }
 
   .services__botton {
     bottom: 0;
     right: 0;
   }
-
-  .services__list {
-    margin-bottom: 30px;
-  }
 }
 
-@media(max-width: 768px) {
+@media(max-width: $mobile) {
   .services__title {
     width: 90%;
     margin-right: 2%;
@@ -155,29 +149,23 @@
   }
 
   .services__list {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
   }
 
   .services__link {
-    width: 95%;
+    width: 290px;
+    height: 256px;
     margin-bottom: 30px;
   }
 
-  .services__link--production {
-    background-image: url("../img/mobile-service-1.png");
-  }
-
-  .services__link--installation {
-    background-image: url("../img/mobile-service-2.png");
-  }
-
-  .services__link--accessories {
-    background-image: url("../img/mobile-service-3.png");
+  .services__img {
+    width: 290px;
+    height: 256px;
   }
 
   .services__subtitle {
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: -4px;
+    margin-left: -12px;
   }
 }
