@@ -6,7 +6,9 @@
 
   margin-top: 170px;
   margin-left: 5.7%;
-  margin-right: 1%;
+/*  margin-right: 1%;*/
+
+  overflow: hidden;
 }
 
 .promo__content {
@@ -56,11 +58,17 @@
   background-image: url("../img/polygon-feedback-1.png");
   background-position: 0 -140px;
   background-repeat: no-repeat;
+
+  overflow: hidden;
 }
 
 .promo__button {
+  display: flex;
+
   margin-left: 95px;
   padding: 17px 45px;
+  max-width: 407px;
+  box-sizing: border-box;
 
   background-color: $color;
   border-radius: 5px;
@@ -103,13 +111,16 @@
   transform: rotate(-90deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $table) {
   .promo {
     margin-top: 38px;
+    min-height: 300px;
+    flex-wrap: nowrap;
   }
 
   .promo__content {
     margin-right: 0px;
+    z-index: 5;
   }
 
   .promo__title {
@@ -149,7 +160,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
   .promo {
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -194,6 +205,7 @@
   }
 
   .promo__button {
+    max-width: 287px;
     margin-right: 6%;
     margin-left: 6%;
     margin-bottom: 68px;

@@ -196,8 +196,8 @@
             <p class="feedback__subtitle">Мы проконсультируем Вас бесплатно</p>
             <form class="feedback__form" method="get" action="https://echo.htmlacademy.ru">
               <div class="feedback__pesonal">
-                <input class="feedback__input feedback__input--text" type="text" name="name" placeholder="Имя" required>
-                <input class="feedback__input feedback__input--tel" type="tel" name="tel" placeholder="Телефон" required>
+                <input class="feedback__input feedback__input--text" type="text" name="name" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$" maxlength="30" required>
+                <input class="feedback__input feedback__input--tel" type="tel" name="tel" placeholder="Телефон" pattern="^\+7\d{3}\d{7}$" maxlength="12" required>
               </div>
               <textarea class="feedback__textarea" rows="6" placeholder="Ваш вопрос" name="letter"></textarea>
               <div class="feedback__nav">
@@ -306,8 +306,8 @@
       <p class="modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
         <div class="modal__pesonal">
-          <input class="modal__input modal__input--text" type="text" name="name" placeholder="Имя" required>
-          <input class="modal__input modal__input--tel" type="tel" name="tel" placeholder="Телефон" required>
+          <input class="modal__input modal__input--text" type="text" name="name" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]" maxlength="30">
+          <input class="modal__input modal__input--tel" type="tel" name="tel" placeholder="Телефон" required pattern="^\+7\d{3}\d{7}$" maxlength="12">
         </div>
         <textarea class="modal__textarea" rows="3" placeholder="Ваш вопрос" name="letter"></textarea>
         <div class="modal__nav">
@@ -318,56 +318,5 @@
       </form>
     </div>
   </section>
-
-  <script>
-    var navMain = document.querySelector('.main-nav__list');
-    var navToggle = document.querySelector('.main-nav__button');
-
-    var contactList = document.querySelector('.contact__list');
-    var contactToggle = document.querySelector('.contact__button');
-
-    navMain.classList.remove('nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('closed')) {
-          navMain.classList.remove('closed');
-          navMain.classList.add('opened');
-      } else {
-          navMain.classList.add('closed');
-          navMain.classList.remove('opened');
-      }
-    });
-
-    contactList.classList.remove('nojs');
-
-    contactToggle.addEventListener('click', function() {
-      if (contactList.classList.contains('closed')) {
-          contactList.classList.remove('closed');
-          contactList.classList.add('opened');
-      } else {
-          contactList.classList.add('closed');
-          contactList.classList.remove('opened');
-      }
-    });
-
-
-    var modalButton = document.querySelector('.info-company__button');
-    var modal = document.querySelector('.modal');
-
-    modalButton.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      modal.classList.add('modal__show');
-    });
-
-    window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (modal.classList.contains("modal__show")) {
-            modal.classList.remove("modal__show");
-        }
-      }
-    });
-
-  </script>
 </body>
 </html>
